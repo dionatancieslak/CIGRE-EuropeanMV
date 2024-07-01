@@ -1,4 +1,4 @@
-# EuropeanMV Dataset: common events in an active distribution energy network.
+# EuropeanMV Dataset: common events in an active distribution energy network
 
 ## Overview
 <p align="justify">
@@ -66,12 +66,11 @@ The waveforms obtained in the simulation step can be processed by Fourier approa
 ![image](https://github.com/dionatancieslak/CIGRE-EuropeanMV/assets/14805079/42494e38-44fe-47ca-bf49-eb76bf7a0a30)
 <p align="center"> Figure 3 - Example of an estimated phasor with i = 1, 2 and 3.
 
-## Example of dataset
+## Example of Dataset
 
 <p align="justify">
 The original dataset took an average of 45 minutes to be simulated and, in order to build a homogeneous dataset, each class of event is simulated 30 times at each location (Table 1), where for every simulation, random values of class-specific parameters are picked up, totaling 2700 examples, with a simulation elapsed time of around 2025 hours, in two computers Intel i5-3230M @ 2.6GHz with 8 GB of RAM, totalling more than 30 GB of simulated data.
 
-By repository limitations, a reduced dataset is added in order the motivate preliminary investigations of the reader.
+By repository limitations, a 355MB dataset ("reduced_dataset.rar", hosted in mega.nz) is added in order the motivate preliminary investigations of the reader.
 
-
-
+https://mega.nz/file/7WIyQRxR#M6t06k9NSkD_yZ6SulgMNGU34vX5iCp6bQE0yMKTgHk
