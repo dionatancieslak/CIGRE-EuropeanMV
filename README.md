@@ -71,6 +71,17 @@ The waveforms obtained in the simulation step can be processed by Fourier approa
 <p align="justify">
 The original dataset took an average of 45 minutes to be simulated and, in order to build a homogeneous dataset, each class of event is simulated 30 times at each location (Table 1), where for every simulation, random values of class-specific parameters are picked up, totaling 2700 examples, with a simulation elapsed time of around 2025 hours, in two computers Intel i5-3230M @ 2.6GHz with 8 GB of RAM, totalling more than 30 GB of simulated data.
 
-By repository limitations, a small dataset ("reduced_dataset.rar", hosted in mega.nz) is added in order the motivate preliminary investigations of the reader.
+By repository limitations, a small dataset ("reduced_dataset.rar", hosted in mega.nz) is added in order to motivates preliminary investigations.
 
 https://mega.nz/file/7WIyQRxR#M6t06k9NSkD_yZ6SulgMNGU34vX5iCp6bQE0yMKTgHk
+
+## Citing
+[1] Cieslak, D.A.G., Moreto, M., Lazzaretti, A.E. et al. Usage of Harmonic Synchrophasors for High-Impedance Fault Classification in Microgrids. J Control Autom Electr Syst 35, 485–498 (2024). https://doi.org/10.1007/s40313-024-01080-2
+
+[2] Cieslak, D.A.G., Moreto, M., Lazzaretti, A.E. et al. High impedance fault classification in microgrids using a transformer-based model with time series harmonic synchrophasors under data quality issues. Neural Comput & Applic (2024). https://doi.org/10.1007/s00521-024-09802-y
+
+## Contact
+For any questions or inquiries, please contact dcieslak@utfpr.edu.br.
+
+## Software License Agreement
+Our dataset/code can be used for research, non-comercial or comercial purposes for free with proper citation.
