@@ -11,7 +11,6 @@ The European medium voltage (MV) distribution system has a three-phase feeder th
 In the original configuration, the system has predominantly underground cables, meantime for High Impedance Fault (HIF) investigation, it makes more sense to deal with overhead lines, once that most HIFs’ characteristics are based on conductor-ground touch. In this sense, the system is adapted to contain overhead lines. Another nuanced modification performed is concerned to the system’s grounding. So, a grounding transformer at the end of the substation is added to the network. Finally, detailed distributed generation units are inserted in the system: these units are coupled through inverters controlled by maximum power point tracking. The aforementioned system is fully modelled and implemented in Matlab/Simulink environment.
 
 ![image](https://github.com/dionatancieslak/CIGRE-EuropeanMV/assets/14805079/017551f1-0c5c-4b76-a8ae-e5b2703c7153)
-
 <p align="center"> Figure 1 - European MV distribution system.
 
 <p align="justify">
@@ -34,13 +33,23 @@ Files considered in the simulations are presented in "simulations.rar" and consi
     - 2.DGS (distributed generation switching model)
     - 3.HIF (high impedance fault model)
     - 4.LIF (low impedance fault model)
-    - 5.LOV (load variation model) 
-    - 6.TRE (transformer energization model)
+    - 5.LOV (load variation model)
+    - 6.NOP (normal operation model)
+    - 7.TRE (transformer energization model)
+
+<p align="justify">
+Each class model has its own parameter definition, so, in each simulation, the parameters are randomly selected among each interval of values, as can be see in the Table ahead.
+
+![image](https://github.com/dionatancieslak/CIGRE-EuropeanMV/assets/14805079/08e06bf2-ce02-4d8d-b6b5-743e817c26a5)
+<p align="center"> Table 1 - Parameters considered in the simulations.
+
 - MG_original: model of CIGREE European MV Network and the renewable energy sources model.
-    - MG_original.slx/c (microgrid Simulink model)
-    - myModel_init.mat (initialization parameters)
-    - power_PVarray_grid_det_CIGRE.slx (PV model)
-    - power_wind_dfig_det_CIGRE.slx (WT model)
-    - saveData.m (script to save simulation data into a .mat file)
+    - *class*.slx (microgrid Simulink model)
+    - MG_sim_*class*.m (script to control simulations)
+    - myModel_init.mat (initialization microgrid parameters)
+    - power_PVarray_grid_det_CIGRE.slx (PV model with parameters)
+    - power_wind_dfig_det_CIGRE.slx (WT model with parameters)
+    - randomValue.m (function used in the MG_sim file)
+    - saveData.m (function used in the MG_sim file)
 
 ## Data Processing Files
