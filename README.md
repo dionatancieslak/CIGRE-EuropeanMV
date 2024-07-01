@@ -26,7 +26,7 @@ The nodes of the system are modelled as three-phase voltage-current measurement 
 - columns 72-101 (low voltage side - 0.4 kV): Vbus1LVA, Vbus1LVB, Vbus1LVC, Vbus3LVA, ..., Vbus11LVC (does not contain nodes 0 and 2)
 - columns 102-110 (low voltage side - 0.4 kV, all generation nodes): Ibus3LVA, Ibus3LVB, Ibus3LVC, ..., Ibus7LVC
 
-Files considered in the simulations are presented in "simulations.rar" and consists in:
+Files considered in the simulations are presented in "simulation_classes.rar" and consists in:
 
 - classes: model and scripts of all considered classes (faulty and non-faulty).
     - 1.CBS (capacitor bank switching model)
@@ -53,3 +53,17 @@ Each class model has its own parameter definition, so, in each simulation, the p
     - saveData.m (function used in the MG_sim file)
 
 ## Data Processing Files
+
+<p align="justify">
+The waveforms obtained in the simulation step can be processed by Fourier approach, i.e, by calculating the correspondent harmonic content of each measure. The .m files are processed in Python and the scripts needed are available in "processing_data.rar", and consists in:
+
+- DFT.py (function to calculate DFT of a time series, recursively)
+- ResamplePhasor.py (function to resample arrays according to a desired number of phasors per fundamental cycle)
+![image](https://github.com/dionatancieslak/CIGRE-EuropeanMV/assets/14805079/1d2ec81f-776c-4b8b-a81f-b734fc5b1ea6)
+<p align="center"> Figure 2 - Example of a resampled phasor series.
+
+- EstimatesPhasor.py (script that estimated the ith phasors of an waveform input)
+![image](https://github.com/dionatancieslak/CIGRE-EuropeanMV/assets/14805079/42494e38-44fe-47ca-bf49-eb76bf7a0a30)
+<p align="center"> Figure 3 - Example of an estimated phasor with i = 1, 2 and 3.
+
+
