@@ -71,6 +71,6 @@ The waveforms obtained in the simulation step can be processed by Fourier approa
 <p align="justify">
 The original dataset took an average of 45 minutes to be simulated and, in order to build a homogeneous dataset, each class of event is simulated 30 times at each location (Table 1), where for every simulation, random values of class-specific parameters are picked up, totaling 2700 examples, with a simulation elapsed time of around 2025 hours, in two computers Intel i5-3230M @ 2.6GHz with 8 GB of RAM, totalling more than 30 GB of simulated data.
 
-By repository limitations, a 355MB dataset ("reduced_dataset.rar", hosted in mega.nz) is added in order the motivate preliminary investigations of the reader.
+By repository limitations, a small dataset ("reduced_dataset.rar", hosted in mega.nz) is added in order the motivate preliminary investigations of the reader.
 
 https://mega.nz/file/7WIyQRxR#M6t06k9NSkD_yZ6SulgMNGU34vX5iCp6bQE0yMKTgHk
