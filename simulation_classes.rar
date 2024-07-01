@@ -1,1 +1,19 @@
-class simulation model
+Files contained:
+
+classes: model and scripts of all considered classes (faulty and non-faulty).
+1.CBS (capacitor bank switching model)
+2.DGS (distributed generation switching model)
+3.HIF (high impedance fault model)
+4.LIF (low impedance fault model)
+5.LOV (load variation model)
+6.NOP (normal operation model)
+7.TRE (transformer energization model)
+-----------------------------------------------------------------------------------------
+MG_original: model of CIGREE European MV Network and the renewable energy sources model.
+class.slx (microgrid Simulink model)
+MG_sim_class.m (script to control simulations)
+myModel_init.mat (initialization microgrid parameters)
+power_PVarray_grid_det_CIGRE.slx (PV model with parameters)
+power_wind_dfig_det_CIGRE.slx (WT model with parameters)
+randomValue.m (function used in the MG_sim file)
+saveData.m (function used in the MG_sim file)
